@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 :root{
     --green: lightgreen;
@@ -161,8 +160,7 @@ header .icons #menu-bars{
 }
 ul{
     list-style: none;
-}
-.footer{
+}.footer{
     margin-left: auto;
     background: #24262b;
     padding: 70px 0;
@@ -475,11 +473,7 @@ section hr{
 #curry{
     display:none;
 }
-#fast{
-    display:none;
-
-}
-section .paradise{
+section .barbeque{
     text-align: center;
 
 }
@@ -490,7 +484,7 @@ section h4{
     font-size: 30px;
     color:orangered;
 }
-.meh .box-container{
+.barb .box-container{
     margin: auto;
     align-items: center;
     
@@ -514,40 +508,6 @@ section h4{
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
     gap:5.5rem;
 
-}
-.fastfood .box-fast-food{
-    margin:auto;
-    align-items: center;
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
-    gap:5.5rem;
-
-}
-.fastfood .box-fast-food .box{
-    margin-left: 2.5rem;
-    font-size: 1.2rem;
-    padding:2.5rem;
-    align-items: center;
-    background: #fff;
-    border-radius: .5rem;
-    border: .1rem solid rgba(0,0,0,.2);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-
-}
-.fastfood .box-fast-food .box:hover{
-    transform : scale(1.1);
-}
-.fastfood .box-fast-food .box img{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-.fastfood .box-fast-food .box span{
-    font-size: 20px;
 }
 .currys .box-curry{
     margin:auto;
@@ -631,7 +591,7 @@ section h4{
 .starters .box-starters .box span{
     font-size: 20px;
 }
-.meh .box-container .box{
+.barb .box-container .box{
     margin-left: 2.5rem;
     font-size: 1.2rem;
     padding:2.5rem;
@@ -645,16 +605,16 @@ section h4{
     text-align: center;
     
 }
-.meh .box-container .box:hover{
+.barb .box-container .box:hover{
     transform: scale(1.1);
 }
-.meh .box-container .box img{
+.barb .box-container .box img{
     height: 100%;
     width: 100%;
     border-radius: 5px;
     
 }
-.meh .box-container .box span{
+.barb .box-container .box span{
     font-size: 20px;
 }
 
@@ -730,7 +690,7 @@ section h4{
     text-align: center;
     
 }
-.home .meh .glow{
+.home .barb .glow{
     
         font-size: 80px;
         color:black;
@@ -753,6 +713,23 @@ section h4{
     border:none;
     border-radius: 10px;
     
+}
+.cart{
+    margin-left: 80px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-size: 35px;
+    box-shadow: var(--box-shadow);
+
+}
+.table-cart tr th{
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+}
+.table-cart tr td{
+    font-size: 15px;
 }
 .about{
     height: 100%;
@@ -932,7 +909,7 @@ section h4{
     color:white;
     
 }
-.home .meh h2 img{
+.home .barb h2 img{
     margin: auto;
     
 }
