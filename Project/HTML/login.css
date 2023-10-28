@@ -10,16 +10,15 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./Images/Background/background.jpg);
-    
+    background-image: url(https://i.pinimg.com/564x/b1/e6/ae/b1e6ae89ae2c3b209ca867ff8de3c3dd.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
 
     transition:0.5s;
 }
 
 body.active{
-    background-image: url(./Images/Background/background.jpg);
+    background-image: url(https://i.pinimg.com/564x/b1/e6/ae/b1e6ae89ae2c3b209ca867ff8de3c3dd.jpg);
 }
 .container{
     align-items: center;
