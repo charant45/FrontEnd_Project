@@ -46,17 +46,25 @@
       </div>
       </div>
 <script>
+
+    // Get the login and signup buttons
     const signinbtn = document.querySelector('.signinbtn');
     const signupbtn = document.querySelector('.signupbtn');
+
+    // Get the form container and body element
     const formbx = document.querySelector('.formbx'); 
     const body = document.querySelector('body')
 
+
+    // Add an event listener to the signup button
     signupbtn.onclick = function(){
         formbx.classList.add('active')
         body.classList.add('active')
     }
+
+    // Add an event listener to the login button
     signinbtn.onclick = function(){
-        formbx.classList.remove('active')
+        formbx.classList.remove('active')   
         body.classList.remove('active')
     }
     </script>

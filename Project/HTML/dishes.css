@@ -19,9 +19,10 @@
 
 html{
     font-size: 62.5%;
-    overflow: auto;
     scroll-padding-top:5.5rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 html::-webkit-scrollbar{
     
@@ -60,15 +61,15 @@ header .logo{
 header .logo i{
     color: orangered;
 }
-header .navbar a{
+header .mg a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color:var(--light-color);
 
 }
-header .navbar a.active,
-header .navbar a:hover{
+header .mg a.active,
+header .mg a:hover{
     color: #fff;
     background: orangered;
 }
@@ -247,7 +248,7 @@ ul{
     border-radius:50%;
     
 }
-.navbar .feed{
+.mg .feed{
     cursor:pointer;
 }
 
@@ -547,160 +548,4 @@ section h1{
     cursor: pointer;
     padding: .8rem 3rem;
     color:white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*media queries*/
-@media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
-    header{
-        padding: 1rem 2rem;
-    }
-    section{
-        padding: 1rem 2rem;
-    }
-    footer{
-        padding: 1rem 2rem;
-    }
-
-}
-@media (max-width:768px){
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-    header .navbar{
-        position: absolute;
-        top:100%; left:0;right:0;
-        background:#fff;
-        border-top:.1rem solid rgba(0,0,0,.2);
-        border-bottom:.1rem solid rgba(0,0,0,.2);
-        padding:1rem;
-        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
-
-    }
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0,100% 100%,0% 100%);
-    }
-    header .navbar a{
-        display:block;
-        padding:1.5rem;
-        margin:1rem;
-        font-size:2rem;
-        background: #eee;
-    }
-    .footer{
-        background: #24262b;
-        padding: 50px 0;
-    }
-    .footer-col h4{
-        cursor: default;
-        font-size: 11.5pt;
-        font-weight: normal;
-        color: orangered;
-        padding-bottom: 10px;
-    }
-    .footer-col ul a
-{
-    font-size:25px;
-    color:orangered;
-}
-.footer-col ul i{
-    font-size:25px;
-    color:orangered;
-}
-.footer-col ul span{
-    cursor:pointer;
-    font-size:20px;
-    font-weight:bold;
-    color:white;
-}
-
-.map ul a{
-    margin-left: 10px;
-    font-size: 15px;
-    color:white;
-}
-.footer-col .mail ul i{
-    padding-top: 20px;
-    
-    font-size:25px;
-}
-.footer-col .mail span{
-    
-    padding-left: 3px;
-    font-size: 12px;
-    font-weight: normal;
-}
-.footer-col .map ul i{
-    padding-top:20px;
-    font-size: 20px;
-}
-.footer-col .map span{
-    font-weight: normal;
-    font-size:12px;
-    margin-left: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
-    color:white;
-    
-}
-.footer-col ul li a{
-    line-height: 1.6;
-    font-size:12px;
-    text-decoration: none;
-    color:white;
-    
-}
-
-
-
-    
-}
-@media (max-width: 991px){
-    html{
-        font-size: 50%;
-
-    }
 }

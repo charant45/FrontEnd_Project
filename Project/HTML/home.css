@@ -19,9 +19,9 @@
 
 html{
     font-size: 62.5%;
-    overflow: auto;
     scroll-padding-top:5.5rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 html::-webkit-scrollbar{
     
@@ -60,15 +60,15 @@ header .logo{
 header .logo i{
     color: orangered;
 }
-header .navbar a{
+header .mg a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color:var(--light-color);
 
 }
-header .navbar a.active,
-header .navbar a:hover{
+header .mg a.active,
+header .mg a:hover{
     color: #fff;
     background: orangered;
 }
@@ -323,6 +323,13 @@ section{
     margin: auto;
 }
 
+header .mg2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
 .row{
     display:flex;
     flex-wrap:nowrap;
@@ -417,7 +424,7 @@ ul{
     border-radius:50%;
     
 }
-.navbar .feed{
+.mg .feed{
     cursor:pointer;
 }
 
@@ -762,6 +769,10 @@ section h1{
     margin-top:20px;
     font-size:15px;
 }
+
+.add .add-container .textimg h2 {
+    font-size: 50px;
+}
 .add .add-container .textimg{
     margin-top: 150px;
     text-transform: normal;
@@ -862,7 +873,7 @@ button:hover{
     header .icons #menu-bars{
         display: inline-block;
     }
-    header .navbar{
+    header .mg{
         position: absolute;
         top:100%; left:0;right:0;
         background:#fff;
@@ -872,10 +883,10 @@ button:hover{
         clip-path: polygon(0 0, 100% 0,100% 0,0 0);
 
     }
-    header .navbar.active{
+    header .mg.active{
         clip-path: polygon(0 0, 100% 0,100% 100%,0% 100%);
     }
-    header .navbar a{
+    header .mg a{
         display:block;
         padding:1.5rem;
         margin:1rem;

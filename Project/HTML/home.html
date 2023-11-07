@@ -9,77 +9,34 @@
 <link rel="stylesheet" href="home.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body onload="myload()">
-<div class="loader-container" id = "loader">
-    <img src="./Images/loader/loader.gif">
-    
-</div>
-
+<body>
     <!--Header section start-->
     <header>
         <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
-        <nav class="navbar">
-            <a class="active" href="./home.html">Home</a>
-            <a href="./dishes.html">dishes</a>
-            <a href="#" onclick="openAbout()">about</a>
-            <a href="./contact.html" >Contact us</a>
-           
-            <a class="feed" id="feedback">feedback</a>
-            <a href="#">Orders</a>
-        </nav>
+        <div class="mg2">
+              
+            <nav class="mg">
+                <div>
+                    <a class="active" href="./home.html">Home</a> <!-- Home Page -->
+                    <a href="./dishes.html">dishes</a>            <!--Dishes Section-->
+                    <a href="#" onclick="openAbout()">about</a>   <!--AboutUs-->
+                    <a href="./contact.html" >Contact us</a>       <!--Contact-->
+                    <a href="#">Orders</a>                        <!--Orders-->
+                </div>
+
+            </nav>
+        </div>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
             <i class="fa fa-user" aria-hidden="true"></i>
-            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>    <!--Link Login Page-->
             
         </div>
     </header>
-    <div class="back">
-    <div class="container1" id="co1">
-        <div class="post">
-            <div class="text">Thanks for Rating us!</div>
-            <div class="edit">Edit</div>
-            <i class="fas fa-times" id="close"></i>
-    
-        </div>
-        <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
-            <i class="fas fa-times" id="close"></i>
-            <h4></h4>
-            <div class="textarea">
-                <textarea cols="30" placeholder="Describe your experience"></textarea>
-    
-            </div>
-            
-            <div class="btn">
-                <button type="submit">Post</button>
-            </div>
-        </form>
-        </div>    
-    </div>
-    </div>
-    <!-- Header section ends-->
 
-    <!--search form-->
-    <form action="" id="search-form">
-        <input type="search" placeholder="search here..." name="" id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
-        <i class="fas fa-times" id="close1"></i>
-    </form>
-    <!--Search Form ends-->
 
     <!--Home section start-->
     <section class="home" id="home-section">
@@ -87,7 +44,7 @@
 <div class="add">
  <div class="add-container">
  <img src="./Images/briyani1.png">
- <div class="textimg"><h2>30% off on your<br> first order</h2>
+ <div class="textimg"><h2>40% off on your<br> first order in <br>Barbeque Nation</h2>
  <a href="./Barbeque.html"><button class="ordr">Order Now</button></a></div>
  
  </div>
@@ -134,72 +91,75 @@
 <!--Restaurants-->
 <section class="barb" id="biryani">
     <h1 class="barbeque">Restaurants</h1>
-    <hr class="line"> 
+    <hr class="line">
+    <br/><br/><br/><br/>
     <div class="box-container">
-    <div class="box">
-        <a href="./barbeque.html"><img src="./Images/Restaurants/barbeque.jpg"></a>
-        <h3>Barbeque</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <br>
-            <p>Starters,biryani,tandoori</p>
-
-        </div>
-        </div>
         <div class="box">
-        <a href="./mehfil.html"><img src="./Images/Restaurants/mehfil.jpg"></a>
-        <h3>Mehfil</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <br>
-            <p>Starters,biryani,tandoori</p>
+            <a href="./barbeque.html"><img src="./Images/Restaurants/barbeque.jpg"></a>
+            <h3>Barbeque</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+                <p>Starters,biryani,tandoori</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <a href="./mehfil.html"><img src="./Images/Restaurants/mehfil.jpg"></a>
+            <h3>Mehfil</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+                <p>Starters,biryani,tandoori</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg"></a>
+            <h3>Domino's</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+                <p>Pizza ,Burger, Bread</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <a href="./paradise.html"><img src="./Images/Restaurants/paradise.jpg"></a>
+            <h3>Paradise</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+                <p>Starters,biryani,tandoori</p>
+
+            </div>
+            </div>
+
+            
 
         </div>
-        </div>
-        <div class="box">
-        <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg"></a>
-        <h3>Domino's</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <br>
-            <p>Pizza ,Burger, Bread</p>
-
-        </div>
-        </div>
-        <div class="box">
-        <a href="./paradise.html"><img src="./Images/Restaurants/paradise.jpg"></a>
-        <h3>Paradise</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <br>
-            <p>Starters,biryani,tandoori</p>
-
-        </div>
-        </div>
-
-        
-
-        </div>
-        </section>
-    
+</section>
 
 </section>
+
+
+<!--About Us-->
 <div id="about" class="about">
     <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="about-overlay">
@@ -216,7 +176,7 @@
         and flexible earning opportunities. </p>
     </div>
 </div>
-
+<!--About Us Ends-->
 
 
 <!--Footer Section-->
@@ -232,9 +192,7 @@
                 <div class="map">
                     <ul>
                         <i class="fa fa-map-marker"></i>
-                            <span>1-21,
-                                B.V.Reddy Colony, Chittoor, Andhra Pradesh - 517001
-                            </span>
+                            <span>1-21,B.V.Reddy Colony, Chittoor<br> Andhra Pradesh - 517001</span>
                     </ul>
                     </div>
                 <div class="mail">
@@ -276,17 +234,7 @@
                         <li><a href="./dishes.html">Fast food</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Follow us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
 
-                    </div>
-
-                </div>
 
             </div>
             </div>
@@ -301,33 +249,20 @@
     <!--Java Script-->
     <script>
         let menu = document.querySelector('#menu-bars');
-        let navbar = document.querySelector('.navbar');
+        let mg = document.querySelector('.mg');
         
         menu.onclick = () => {
             menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
+            mg.classList.toggle('active');
         }
         window.onscroll=() => {
             menu.classList.remove('fa-times');
-            navbar.classList.remove('active');
+            mg.classList.remove('active');
         }
-        document.querySelector('#search-icon').onclick=() => {
-            document.querySelector('#search-form').classList.toggle('active');
-        }
-        document.querySelector('#close1').onclick=() => {
-            document.querySelector('#search-form').classList.toggle('active');
-        }
-        document.querySelector("#feedback").onclick=() =>{
-        document.querySelector("#co1").classList.toggle("active");
-    }
+
         document.querySelector("#close").onclick=() =>{
         document.querySelector("#co1").classList.toggle("active");
     }
-    var preloader = document.getElementById("loading");
-    function myload() {
-        preloader.style.display="none";
-    }
-
 
         const btn = document.querySelector("button");
         const post = document.querySelector(".post");
@@ -350,11 +285,8 @@
     function closeNav(){
         document.getElementById("about").style.width = "0%";
     }
-    var preloader = document.getElementById("loader");
+
     
-    function myloader(){
-        preloader.style.display = "none";
-    }
     function mygrocery(){
         confirm("Order Now on Whatsapp click ok to continue");
     }

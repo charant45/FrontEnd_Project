@@ -13,11 +13,10 @@
     <!--Header section start-->
     <header>
         <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
-        <nav class="navbar">
+        <nav class="mg">
             <a href="./home.html">Home</a>
             <a class="active" href="./dishes.html">dishes</a>
             <a href="#" onclick="openAbout()">about</a>
-            <a class="feed" id="feedback">feedback</a>
             <a href="./contact.html" >Contact us</a>
             <a href="#">Orders</a>
         </nav>
@@ -30,54 +29,8 @@
             <a href="login.html" class="fas fa-sign-in-alt"></a>
             
         </div>
-
-         <!--search form-->
-    <form action="" id="search-form">
-        <input type="search" placeholder="search here..." name="" id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
-        <i class="fas fa-times" id="close1"></i>
-    </form>
-    <!--Search Form ends-->
     </header>
 
-
-<!--Rating Form starts-->
-
-<div class="back">
-    <div class="container1" id="co1">
-        <div class="post">
-            <div class="text">Thanks for Rating us!</div>
-            <div class="edit">Edit</div>
-            <i class="fas fa-times" id="close"></i>
-    
-        </div>
-        <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
-            <i class="fas fa-times" id="close"></i>
-            <h4></h4>
-            <div class="textarea">
-                <textarea cols="30" placeholder="Describe your experience"></textarea>
-    
-            </div>
-            
-            <div class="btn">
-                <button type="submit">Post</button>
-            </div>
-        </form>
-        </div>    
-    </div>
-    </div>
-<!--Rating form ends-->
 
 <section>
     <h3>Dishes</h3>
@@ -227,17 +180,6 @@
                         <li><a href="#">Fast food</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                    </div>
-
-                </div>
 
             </div>
             </div>
@@ -252,15 +194,15 @@
     <!--Java Script-->
     <script>
         let menu = document.querySelector('#menu-bars');
-        let navbar = document.querySelector('.navbar');
+        let mg = document.querySelector('.mg');
         
         menu.onclick = () => {
             menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
+            mg.classList.toggle('active');
         }
         window.onscroll=() => {
             menu.classList.remove('fa-times');
-            navbar.classList.remove('active');
+            mg.classList.remove('active');
         }
         document.querySelector('#search-icon').onclick=() => {
             document.querySelector('#search-form').classList.toggle('active');

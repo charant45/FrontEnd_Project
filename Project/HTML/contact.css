@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    
 }
 body{
     display:flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -22,9 +22,9 @@ body{
     height:600px;
     color:black;
     background-color: gainsboro;
-    background-image: url(./Images/Background/contactbg.jpg);
+    background-image: url(./Images/Background/Blue.jpg);
     background-repeat: no-repeat;
-    background-size: 900px;
+    background-size: 1000px;
     padding-left: 180px;
     padding-top:180px;
 }
@@ -36,11 +36,13 @@ body{
     width:480px;
     height: 300px;
     padding:15px;
-    background-color:gainsboro
+    font-size: 1rem;
+    background-color:gainsboro;
+   
 }
 .contact{
     float:right;
-    height: 600px;
+    height: 700px;
     width: 40%;
     margin: 20px;
     padding-top:40px;
@@ -52,7 +54,6 @@ body{
     color: black;
     margin-top:10px;
     width: 100%;
-   
     float: left;
    
     
@@ -77,9 +78,13 @@ body{
     cursor: pointer;
 }
 .formtext{
+
     
     height :300px;
     width:400px;
     border:2px solid black;
 
 }
+
+
+
